@@ -1,8 +1,51 @@
-<html>
+<!doctype html>
+<html lang="es">
 	<head>
+		<meta charset="utf-8">
 		<title>Titulo de la pagina</title>
+		<link rel="stylesheet" href="css/main.css">
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/main.js"></script>
 	</head>
-	<body style="background:blue">
+	<body>
 		<h1>Hola Mundo!</h1>
+		<img src="images/lion-wide.jpg" alt="Rey leon" width="500px" height="300px">
+		<form action="action.php">
+			<fieldset>
+				<legend>Formulario</legend>
+				<table>
+					<tr>
+						<td><label for="chk">Quiere respuesta?</label></td>
+						<td><input id="chk" type="checkbox"/></td>
+					</tr>
+					<tr>
+						<td>Fecha:</td>
+						<td><input type="date"></td>
+					</tr>
+					<tr>
+						<td>Puntaje:</td>
+						<td><input type="number" max="7" min="0"></td>
+					</tr>
+					<tr>
+						<td>correo electronico:</td>
+						<td><input placeholder="ejemplo@dominio.cl" type="email"></td>
+					</tr>
+					<tr>
+						<td>reingrese correo electronico:</td>
+						<td><input placeholder="ejemplo@dominio.cl" type="email"></td>
+					</tr>
+					<tr>
+						<td valign="top">mensaje:</td>
+						<td>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit"> <input type="reset" value="limpiar	"></td>
+					</tr>
+				</table>
+			</fieldset>	
+		</form>
 	</body>
 </html>
