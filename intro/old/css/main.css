@@ -9,3 +9,8 @@ img{
 img:hover{
 	border-radius: 10%;
 }
+article{
+	float: left;
+	width: 50%;
+}
+article h1{ text-align: center;  }
