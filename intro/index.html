@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header>
+		<nav id="menu">
+			<ul>
+				<li>
+					<a href="history.html">Go to history</a>
+				</li>
+				<li>
+					<a href="galery.html">Go to galery</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<table>
+		<tr>
+			<td><input type="button" id="test"><img src="images/lion-wide.jpg" alt=""></td>
+			<td>
+
+				<fieldset>
+					<legend>Form</legend>
+					<form action="process.php" id="myform" name="myform">
+						<table>
+							<tr>
+								<td>Username:</td>
+								<td> <input required type="text" id="username" name="username"> </td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td> <input required type="password" id="password" name="password"> </td>
+							</tr>
+							<tr>
+								<td>Birthdate: </td>
+								<td>
+									<input required type="date" id="birthdate" >
+								</td>
+							</tr>
+							<tr>
+								<td>Message:</td>
+								<td>
+									<textarea name="message" id="message" cols="30" rows="10"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="agree">Agree terms?</label></td>
+								<td>
+									<input required id="agree" name="agree" type="checkbox"/>
+
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="submit">
+								</td>
+								<td>
+									<input type="reset" value="limpiar">					
+									<input type="range">			
+								</td>
+							</tr>
+						</table>
+					</form>
+				</fieldset>
+			</td>
+		</tr>
+	</table>
+	<section id="page"></section>
+	<video id="myvideo" controls src="https://dl.dropboxusercontent.com/u/29677707/Videos/appwebcliente/mockup.mp4"></video>
+</body>
+</html>

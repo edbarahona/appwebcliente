@@ -1,0 +1,53 @@
+img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;	
+}
+:required{
+	border: 1px solid blue;
+}
+
+td:first-child{
+	text-align: right;
+	vertical-align: top;
+}
+body{
+	background: url( '../images/bamboo.jpg' );	
+}
+
+fieldset{
+	background: rgba(0,0,0,.5);
+	color: white;
+	border-radius: 30px;
+}
+.err{
+	border: 1px solid red;
+	color: red;
+}
+input{
+	color: black;
+	border: 1px solid black;
+	transition: all 1s ease-in-out;
+}
+header{
+	top: 400px;
+	width: 90%;
+	height: 50px;
+	position: absolute;
+	background: black;
+}
+#menu a{
+	color: white;
+	text-decoration: none;	
+}
+#menu a:hover{
+	color: white;
+	text-decoration: underline;	
+}
+#page{
+	color: white;
+	background: rgba(0,0,0,.5);
+}
+video{
+	width: 50%;
+}
