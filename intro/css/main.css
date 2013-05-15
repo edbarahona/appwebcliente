@@ -1,0 +1,35 @@
+#table-main{
+	position: absolute;
+	top: 5%;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width: 80%;
+	height: 95%;
+}
+img.logo{
+	width: 500px;
+	height: 300px;
+}
+#celda-leon{
+	width: 510px;
+}
+
+.required{
+	color: red;
+}
+body{
+	background: url( '../images/bamboo.jpg' );
+}
+fieldset{
+	background-color: white;
+}
+legend{
+	position: relative;
+	top: 20px;
+	font-size: 25px;
+}
+fieldset table{
+	position: relative;
+	top: 27px;
+}

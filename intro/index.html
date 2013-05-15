@@ -1,0 +1,61 @@
+
+<html>
+<head>
+	<title>Mi pagina v1</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<input type="button" onclick="javascript: test();">
+	<table id="table-main">
+			<tr>
+				<td id="celda-leon" align="center">
+					<img class="logo" src="images/lion-wide.jpg" alt="">
+				</td>
+				<td>
+					<fieldset>
+						<legend>Formulario</legend>
+						<form onsubmit="javascript:return valid() " action="process.php" >
+							<table>
+								<tr>
+									<td align="right">Username: <label for="" class="required">*</label></td>
+									<td>
+										<input title="dato obligatorio" type="text" id="username" name="username">
+									</td>
+								</tr>
+								<tr>
+									<td align="right">Password: <label for="" class="required">*</label></td>
+									<td>
+										<input title="dato obligatorio" id="password" type="password">
+									</td>
+								</tr>
+								<tr>
+									<td align="right">Birthdate: <label for="" class="required">*</label></td>
+									<td><input title="dato obligatorio" id="birthdate" type="text"></td>
+								</tr>
+								<tr>
+									<td align="right" valign="top">Message:</td>
+									<td>
+										<textarea name="" id="" cols="30" rows="10"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">Agree terms? <label for="" class="required">*</label></td>
+									<td>
+										<input id="agree" type="checkbox">
+									</td>
+								</tr>
+								<tr>
+									<td align="right"><input type="reset" value="limpiar"></td>
+									<td>
+										<input type="submit">
+									</td>
+								</tr>
+							</table>
+						</form>
+					</fieldset>
+				</td>
+			</tr>
+		</table>	
+</body>
+</html>
