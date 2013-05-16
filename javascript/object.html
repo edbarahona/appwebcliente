@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	function Persona( _nombre, _apellido, _edad)
+	{
+		this.nombre = _nombre;
+		this.apellido = _apellido;
+		this.edad = _edad;
+		this.getNombreCompleto = function()
+		{
+			return this.apellido  +  ", " + this.nombre
+		}
+	}
+
+	Persona.prototype.saluda = function()
+	{
+		return "nombre completo: " +this.getNombreCompleto() + ", edad: " + this.edad;
+	}
+	var persona = new Persona( "Carlos", "Gonzalez",30);
+	alert(  persona.saluda() );
+	
+
+
+
+	</script>
+</body>
+</html>
