@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+#message{ color : green;}
+	</style>
+</head>
+<body>
+	<script>
+function init(){
+	var nombreCompleto = prompt( "ingrese su nombre completo: ");
+	var capa = document.getElementById('message');
+	capa.innerHTML = "<h1>" + nombreCompleto + "</h1>";
+}
+window.onload = init;
+	</script>
+	<div id="message">aqui deberia estar el nombre</div>
+</body>
+</html>

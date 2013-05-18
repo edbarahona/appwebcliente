@@ -181,6 +181,10 @@ eval( texto )
 parseInt( text )
 parseFloat( text )
 
+typeof( value )
+setTimeout( "fn", time)
+setInterval( "fn" , time)
+
 # metodos de cadena
 String.toLowerCase();
 String.toUpperCase();
@@ -211,7 +215,59 @@ push( elemento )  //agrega al final
 sort() 				// ordena
 reverse() 			//invierte
 concat( vector 	)	//pega un nuevo vector al final
-join( vector ) 		//pega un nuevo vector al final
+join( union ) 		//devuelve un texto unido por union
+
+# objetos del navegador
+screen
+	width: 
+	height:
+	availWidth:
+	availHeight:
+
+window
+	closed:
+	defaultStatus
+	frames *
+	history *
+	location
+		href
+
+document
+	write( texto_imprimir )
+	writeln( texto )
+	getElementById( id )
+	close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

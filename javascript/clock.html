@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Su hora</title>
+	<style>
+	#reloj{ 
+		box-shadow: 0px 0px 10px red;
+	}
+	</style> 
+	<script>
+try{
+
+	var time = 1000;
+	var interval;
+	var getDate = function(){
+		var format = function( num ){
+			return ( num < 10 )? "0" + num : num;
+		}
+		var date = new Date();
+		//HH:MM:SS
+		var message = format( date.getHours() ) + ": " + format(date.getMinutes()) + ": " + format(date.getSeconds() );
+		return message;
+	}
+	window.onload = function(){
+
+		var reloj = document.getElementById( "reloj" );
+
+		interval = setInterval(function()
+		{
+			reloj.innerHTML = getDate();
+		} , time );
+	}
+	function detenerReloj()
+	{
+		clearInterval( interval );
+	}
+}catch( e) { alert( e )}
+
+	</script>
+</head>
+<body>
+	<div id="reloj"></div>
+	<input type="button" value="detener boton" onclick="javascript:detenerReloj();">
+</body>
+</html>

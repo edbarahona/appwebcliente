@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFrame</title>
+	<script>
+	window.onload = function(){
+		var count = window.frames.length;
+		alert( "Tienes " + count + " iframes " );
+		//window.location.href = "devolver.html";
+	}
+	</script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="http://www.google.cl" target="marco"> http://www.google.cl </a></li>
+			<li><a href="http://www.jaidefinichon.com" target="marco"> http://www.jaidefinichon.com </a></li>
+			<li><a href="http://www.twitter.com" target="marco"> http://www.twitter.com </a></li>
+			<li> <a href="devolver.html">ir a pagina devolver</a></li>
+		</ul>
+	</nav>
+	<iframe id="marco" src="" frameborder="1" name="marco" height="500" width="500"></iframe>
+</body>
+</html>
