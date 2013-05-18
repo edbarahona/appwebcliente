@@ -170,9 +170,36 @@ nombre_de_la_funcion([]);
 	alert(  persona.saluda() );
 
 	
+# funciones predeterminadas
 
+alert( texto )
+prompt( texto , texto_predetermindado )
+confirm( texto )
 
+eval( texto )
+parseInt( text )
+parseFloat( text )
 
+# metodos de cadena
+String.toLowerCase();
+String.toUpperCase();
+String.substring( indice )
+String.indexOf( subcadena )
+String.length
+
+# clase matematica
+Math.min( n1, n2 );
+Math.max( n1,n2 );
+Math.random( )
+
+# clase fecha
+Date.getFullYear();
+Date.getMonth();
+Date.getDay();
+Date.getHours();
+Date.getMinutes();
+Date.getSeconds();
+Date.getTime(); 
 
 
 
