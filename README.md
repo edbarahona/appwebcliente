@@ -169,18 +169,38 @@ nombre_de_la_funcion([]);
 	var persona = new Persona( "Carlos", "Gonzalez",30);
 	alert(  persona.saluda() );
 
-# funciones pre-determinadas
 
-alert( texto_a_mostrar)
-prompt( texto_a_preguntar, texto_por_defecto)
-confirm( texto_a_preguntar )
+	
+# funciones predeterminadas
 
-eval( texto_a_evaluar )
+alert( texto )
+prompt( texto , texto_predetermindado )
+confirm( texto )
 
+eval( texto )
+parseInt( text )
+parseFloat( text )
 
+# metodos de cadena
+String.toLowerCase();
+String.toUpperCase();
+String.substring( indice )
+String.indexOf( subcadena )
+String.length
 
+# clase matematica
+Math.min( n1, n2 );
+Math.max( n1,n2 );
+Math.random( )
 
-
+# clase fecha
+Date.getFullYear();
+Date.getMonth();
+Date.getDay();
+Date.getHours();
+Date.getMinutes();
+Date.getSeconds();
+Date.getTime(); 
 
 
 
