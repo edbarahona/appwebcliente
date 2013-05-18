@@ -17,3 +17,5 @@ url: https://github.com/user/repository.git
 curso...
 https://github.com/crowcpga/appwebcliente.git
 
+//////
+dejo pendiente que voy a subir un video para que aprendan a instalar git.
