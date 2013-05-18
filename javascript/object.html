@@ -22,7 +22,13 @@
 		return "nombre completo: " +this.getNombreCompleto() + ", edad: " + this.edad;
 	}
 	var persona = new Persona( "Carlos", "Gonzalez",30);
-	alert(  persona.saluda() );
+	if( confirm("quiere mostrar su edad?")){
+		alert(  persona.saluda() );
+
+	}else{
+		alert(  persona.getNombreCompleto() );
+
+	}
 	
 
 

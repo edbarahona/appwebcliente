@@ -169,7 +169,15 @@ nombre_de_la_funcion([]);
 	var persona = new Persona( "Carlos", "Gonzalez",30);
 	alert(  persona.saluda() );
 
-	
+# funciones pre-determinadas
+
+alert( texto_a_mostrar)
+prompt( texto_a_preguntar, texto_por_defecto)
+confirm( texto_a_preguntar )
+
+eval( texto_a_evaluar )
+
+
 
 
 
