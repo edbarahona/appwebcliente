@@ -1,0 +1,19 @@
+Nota:
+* descargar git
+	https://git-scm.com/downloads
+* instalamos git
+	
+* abrir git: 
+	windows: 
+%ar.. progr%/git/git bash
+
+* nos dirigimos a carpeta donde queremos clonar.
+
+* clonamos: 
+	git clone url
+
+url: https://github.com/user/repository.git
+
+curso...
+https://github.com/crowcpga/appwebcliente.git
+
