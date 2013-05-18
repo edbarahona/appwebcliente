@@ -1,0 +1,25 @@
+<script>
+	var vectorPares = new Array( 2,4,6,8) ;
+	var vectorImpares = new Array( 1,3,5,7,9) ;
+
+	//vectorPares[4] = prompt( "ingrese un numero:" );
+	vectorPares.reverse();
+	for( var i = 0 ; i < vectorPares.length; i++)
+	{
+		alert( "for: " +vectorPares[ i ] );	
+	}
+
+	//vectorPares.push( 67 );
+
+	/*for( var indice in vectorPares )
+	{
+		alert( "for-in: " + vectorPares[ indice ]);
+	}*/
+
+	var vectorTotal = vectorPares.concat( vectorImpares );
+	//vectorTotal.push(123);
+	vectorTotal.sort(); 
+	for( var indice in vectorTotal )
+		alert( vectorTotal[indice]);
+
+</script>

@@ -1,6 +1,21 @@
 <script>
 //Date
+/*
+var date = new Date("12/12/2012");
+alert( date.getFullYear() );
+*/
 var date = new Date();
-var anio = date.getFullYear();
-alert( anio );
+var hours = date.getHours();
+var minutes = date.getMinutes();
+var seconds = date.getSeconds();
+
+//HH:MM:ss
+var format = function( num ){
+	return (num<10)? "0" + num: num;
+/*	if( num < 10 )
+		return "0"+ num;
+	return num;*/
+}
+var message = format(hours) + ": "+ format(minutes)  +  ": " + format( seconds);
+alert( message );
 </script>
