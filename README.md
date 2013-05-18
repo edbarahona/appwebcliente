@@ -202,6 +202,28 @@ Date.getMinutes();
 Date.getSeconds();
 Date.getTime(); 
 
+# Arreglos
+var vector = new Array();
+var vectorPares = new Array( 2,4,6 );
+alert( vectorPares[2]);
+
+push( elemento )  //agrega al final
+sort() 				// ordena
+reverse() 			//invierte
+concat( vector 	)	//pega un nuevo vector al final
+join( vector ) 		//pega un nuevo vector al final
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
