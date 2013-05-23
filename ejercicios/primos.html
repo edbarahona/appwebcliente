@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	function esPrimo( num ){
+		var flag = true;
+		for( var i = 2; i < num ; i++){
+			if( num % i == 0)
+				flag = false;
+			//console.log( i );
+		}
+		return flag;
+	}
+	function calcular(){
+		var n1 = document.getElementById('n1').value;
+		var items = new Array();
+		for( var i = 1; i <= n1; i++){
+			if( esPrimo(i))
+				items.push("<li>"+ i +"</li>");
+		}
+		var lista = document.getElementById('lista');
+		lista.innerHTML= items.join(" ");
+	}
+	</script>
+</head>
+<body>
+	<input type="number" id="n1"><input type="button" value="Calcular" onclick="calcular();">
+	<br>
+	<ul id="lista"></ul>
+</body>
+</html>
