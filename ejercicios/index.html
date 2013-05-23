@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+function convertir()
+{
+	var n1 = document.miFormulario.n1.value;
+
+	//alert( n1 );
+	document.miFormulario.n2.value = n1 * 2;
+}
+	</script>
+</head>
+<body>
+	<form action="" name="miFormulario">
+		<input type="number" name="n1">
+		<input type="button" value="convertir" onclick="javascript:convertir()">
+		<input type="number" name="n2">
+	</form>
+</body>
+</html>
