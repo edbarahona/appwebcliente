@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+#capa1{ border: 1px solid red;}
+#capa2{ border: 1px solid blue;}
+	</style>
+</head>
+<body>
+	<input type="button" id="cambiar">
+	<div id="capa1">
+		<table>
+			<tr>
+				<th>Nombre</th><th>Apellido</th>
+			</tr>
+			<tr>
+				
+				<td>Carlos</td><td>Gonzalez</td>
+			</tr>
+		</table>
+	</div>
+	<div id="capa2"></div>
+	<script>
+	document.getElementById('cambiar').onclick = function(){
+		var html = document.getElementById('capa1').innerHTML;
+		document.getElementById('capa2').innerHTML +=( html );
+	}
+	</script>
+</body>
+</html>
