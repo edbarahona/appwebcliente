@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CERTAMEN 1</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/script.js?"></script>
+</head>
+<body>
+	<fieldset>
+		<legend>Formulario de Usuario</legend>
+		<form action="#">
+			<label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre">		
+			<label for="apellido">Apellido:</label><input type="text" id="apellido" name="apellido">
+			<label for="f_nacimiento">Fecha Nacimiento:</label><input type="date" id="f_nacimiento" name="f_nacimiento">
+			<input type="button" onclick="javascript:onClickButton();" id="agregar" name="agregar" value="agregar"/>
+		</form>
+
+	</fieldset>
+	<fieldset>	
+		<table id="tb_usuarios">
+			<thead>
+				<tr>
+					<th>Nombre Completo</th>
+					<th>Fecha de Nacimiento</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr>
+					<td>Gonzalez, Carlos</td>
+					<td>2013-05-24</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</fieldset>
+</body>
+</html>
+

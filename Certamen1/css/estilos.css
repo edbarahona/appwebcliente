@@ -1,0 +1,11 @@
+fieldset{
+	background: #EEE;
+	border-radius: 20px;
+	width: 550px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+body{
+	background: #DDD;
+}
