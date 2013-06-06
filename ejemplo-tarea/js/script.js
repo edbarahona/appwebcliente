@@ -19,25 +19,27 @@ var App = {
 		App.agregarButton.onclick = App.onClickAgregar;
 	},
 	onClickAgregar : function(){
-		//capturar los valores de los input y generar tr de la tabla 
-		App.count++;
-		console.log( App.count );
-		var tr = '	' 		
-			+ '<tr>'
-			+	'<td id="rut_' + App.count +'">' + App.rutInput.value + '</td>'
-			+	'<td id="nombre_' + App.count +'">' + App.nombreInput.value + '</td>'
-			+	'<td id="apellido_' + App.count +'">' + App.apellidoInput.value + '</td>'
-			+	'<td>'
-			+		'<a href="#" onclick="javascript:App.eliminar(this,true)">Eliminar</a>&nbsp;'
-			+		'<a href="#" onclick="javascript:App.modificar(' + App.count + ',this)">Modificar</a>'
-			+	'</td>'
-			+'</tr>';
-		//insertar este tr dentro de tbody-id
-		App.tbodyId.innerHTML += tr;
-		//limpiar los inputs
-		App.rutInput.value = '';
-		App.nombreInput.value = '';
-		App.apellidoInput.value = '';
+		//primero valido los campos si esta bien genero sino mando un mensaje
+		if( App.valida([App.rutInput, App.nombreInput,App.apellidoInput]) ){	
+				//capturar los valores de los input y generar tr de la tabla 
+				App.count++;
+				var tr = '	' 		
+					+ '<tr>'
+					+	'<td id="rut_' + App.count +'">' + App.rutInput.value + '</td>'
+					+	'<td id="nombre_' + App.count +'">' + App.nombreInput.value + '</td>'
+					+	'<td id="apellido_' + App.count +'">' + App.apellidoInput.value + '</td>'
+					+	'<td>'
+					+		'<a href="#" onclick="javascript:App.eliminar(this,true)">Eliminar</a>&nbsp;'
+					+		'<a href="#" onclick="javascript:App.modificar(' + App.count + ',this)">Modificar</a>'
+					+	'</td>'
+					+'</tr>';
+				//insertar este tr dentro de tbody-id
+				App.tbodyId.innerHTML += tr;
+				//limpiar los inputs
+				App.rutInput.value = '';
+				App.nombreInput.value = '';
+				App.apellidoInput.value = '';
+		}
 
 	},
 	eliminar: function(element, flag){
@@ -59,6 +61,19 @@ var App = {
 		App.nombreInput.value = nombre;
 		App.apellidoInput.value = apellido;
 		App.eliminar( element ,false);
+	},
+	valida : function( arrInput ){
+		var result = true;
+		for( index in arrInput ){
+			var input =arrInput[index]; 
+			if( input.value == "" ){
+				alert( "tienes que llenar el : " + input.id );
+				input.focus(); 
+				result = false;
+				break;
+			}
+		}
+		return result;
 	}
 }
 window.onload = App.startup;
