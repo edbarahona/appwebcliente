@@ -203,6 +203,18 @@ Date.getSeconds();
 Date.getTime(); 
 
 
+#manejo DOM
+padre  = element.parentNode;
+agregar hijo = element.addChild( son );
+eliminar hijo = element.removeChild( son ); //tiene que ser hijo. ... directo!!!!
+
+#podemos forzar a los metodos ( eventos )
+click();
+change();
+focus();
+
+
+
 
 
 
