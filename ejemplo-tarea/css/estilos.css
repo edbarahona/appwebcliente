@@ -1,3 +1,9 @@
 body{
 	background: #DDD;
 }
+#rut{
+	width:60px;
+}
+#table-data{
+	border:1px solid #777;
+}
