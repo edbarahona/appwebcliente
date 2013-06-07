@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		border: 1px solid black;
+		font-size: 40px;
+		padding: 20px;
+	}
+	.rojo{ 
+		color: #F00;
+		-webkit-transition: all 2s;
+	}
+	</style>
+	<script src="jquery.js"></script>
+	<script>
+	$(document).on('ready',function(){
+		$('div').on('click',function(){
+			var $this = $(this);
+			$this.toggleClass('rojo');
+				console.log( $this );
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="identificador">soy un identificador</div>
+	<div>no soy un identificador</div>
+	
+</body>
+</html>

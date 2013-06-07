@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script>
+	$(document).on('ready',function(){
+		
+
+		//capturo las capas (div)
+		var $divs = $('#identificador');
+		//recorro las capas con each( indice , item )
+		$divs.each(function( indice, item ){
+			console.log( $(item).html() );
+		});
+		/*
+		var arr = ["Carlos","Gonzalez","Aedo"];
+		$( arr ).each( function( indice ){
+			alert( arr[indice] );
+		});*/
+		//console.log( $divs );
+	});
+	</script>
+</head>
+<body>
+	<div id="identificador">soy un identificador</div>
+	<div>no soy un identificador</div>
+	
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Manejo de Style desde JS</title>
+	<script>
+function $( id ){
+	return document.getElementById( id );
+}
+window.onload = function(){
+	//capturamos el onclick
+	$('aplicar').onclick = function(){
+		//capturamos el color
+		var color = $('micolor').value;
+		var width = $('width').value;
+		//capturamos el marco
+		var marco = $('marco');
+		//pintamos el fondo del marco segun el color
+		marco.style.background = color;
+		marco.style.width = width;
+
+		console.log( color );	
+	};
+}
+	</script>
+</head>
+<body>
+	<div id="marco" style="background:red;">
+		<input type="text" id="width">
+			<input type="color" id="micolor"><input type="button" id="aplicar" value="aplicar">
+
+	</div>
+</body>
+</html>

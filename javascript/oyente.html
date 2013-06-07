@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+<style>
+	div{ border: 1px solid red; padding: 10px; margin: 10px;}
+</style>
+</head>
+<body>
+	<div id="output"></div>
+	<input type="button" onclick="javascript:agregar();">
+	<input type="button" value="mi botton" onclick="javascritp: miboton_onclick(this);">
+	<script>
+var contador = 0;
+var miboton_onclick = function(element){
+	alert( "el boton que genera el evento es: " + element.id);
+}
+var eliminar = function(element){
+	var parent = element.parentNode;
+	var contenedor = document.getElementById('output');
+	contenedor.removeChild( parent );
+}
+var agregar = function(){
+	//agregar un boton a la capa
+	var html= "<div><input id='boton_" + contador + "' type='button' value='eliminar' onclick='javascript:eliminar(this)'/> </div>";
+	contador++;
+	document.getElementById( 'output' ).innerHTML += html;
+}
+	</script>
+</body>
+</html>
