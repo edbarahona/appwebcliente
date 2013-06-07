@@ -1,0 +1,11 @@
+body {
+  background: #fc0;
+  color: #00f;
+  font-size: 32px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 32px;
+}
