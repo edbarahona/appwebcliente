@@ -1,6 +1,8 @@
 
 var App = {
-	colorSelected:null,
+	colorP1:'#FF0000',
+	colorP2:'#0000FF',
+	control:false,
 	elementSelected: null,
 	windowOnLoad : function(){	
 		var celdas = document.getElementsByTagName('td');
@@ -13,12 +15,13 @@ var App = {
 	},
 	//3.1. toma la celda que hizo el click y se la asigna a elemento elegido.
 	tdSelected : function( event ){
-		//1. asociar el input color y guardarlo como color seleccionado.
-		App.colorSelected = document.getElementById('color').value;
 		//2. capturar todas las celdas (td)
-		var element = event.target;
-		element.style.background = App.colorSelected;
+		var element = event.target;		
+		element.style.background = (App.control)? App.colorP1:App.colorP2;
+		App.control = !App.control;
 		App.elementSelected = element;
+		App.counter++;
+		console.log( App.counter );
 	}
 }
 //1. hacer el metodo window.onload
