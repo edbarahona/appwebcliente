@@ -1,4 +1,5 @@
-var fn = function(){
-	alert('alerta');
-}
-fn();
+(function( $ ,w , undefined){
+	$.fn.HolaMundo = function(){
+		alert('hola mundo!');
+	}
+})(jQuery,window);
