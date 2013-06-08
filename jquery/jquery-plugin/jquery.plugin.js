@@ -1,5 +1,9 @@
 (function( $ ,w , undefined){
 	$.fn.HolaMundo = function(){
-		alert('hola mundo!');
+		$( this ).each( function( index , li ){
+
+			var html = $( li ).html();
+			alert( html );
+		});
 	}
 })(jQuery,window);
