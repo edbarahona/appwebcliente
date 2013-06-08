@@ -238,49 +238,6 @@ document
 	getElementById( id )
 	close()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #manejo DOM
 padre  = element.parentNode;
 agregar hijo = element.addChild( son );
