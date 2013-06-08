@@ -1,4 +1,10 @@
 $( document ).on('ready',function(){
 	//relacinamos un elemento al plugin
-	$('li').HolaMundo('Carlos Gonzalez');
+	$('li').HolaMundo(
+	{ 
+		'message':'cambiar texto',
+		onClickEnd:function( element ){
+				$(element).addClass("clicked");
+		}
+	});
 });
